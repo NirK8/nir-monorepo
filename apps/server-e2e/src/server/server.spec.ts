@@ -1,10 +1,9 @@
 import axios from 'axios';
 
-describe('GET /api', () => {
-  it('should return a message', async () => {
-    const res = await axios.get(`/api`);
-
+describe('GET /api/v1/health', () => {
+  it('should return the message "Healthy!"', async () => {
+    const res = await axios.get('/api/v1/health');
     expect(res.status).toBe(200);
-    expect(res.data).toEqual({ message: 'Welcome to server!' });
+    expect(res.data).toEqual('Healthy!');
   });
 });
