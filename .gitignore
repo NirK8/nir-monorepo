@@ -41,4 +41,3 @@ Thumbs.db
 
 # mongodb-memory-server database
 globalConfig.json
-local-db-variables.env
